@@ -1,0 +1,52 @@
+# Due to how Astro handles type inference with this structure,
+# we need to prefix all configuration keys with an underscore.
+
+[_.site]
+baseUrl = "https://thomasgermain.be"
+
+[_.globalMeta]
+title = "Thomas Germain"
+description = "Webmaster & Systems Administrator — Wallonie, Belgique"
+longDescription = "Designer de formation reconverti dans le développement web, je gère l'infrastructure et les sites de l'agence Hungry Nuggets SRL : ~120 sites WordPress/WooCommerce pour une cinquantaine de clients. Passionné par l'automatisation, les outils IA et les architectures modernes."
+keywords = ["Thomas Germain", "Webmaster", "Systems Administrator", "WordPress", "WooCommerce", "automatisation", "IA", "Wallonie", "Belgique"]
+
+[_.blogMeta]
+title = "Blog — Thomas Germain"
+description = "Notes, expérimentations et retours terrain autour du web, de l'infra, de WordPress et de l'IA."
+longDescription = "Une sélection d'articles sur le développement web, l'administration système, l'automatisation, WordPress, WooCommerce et les outils IA."
+keywords = ["blog", "web", "infra", "WordPress", "WooCommerce", "IA", "automatisation"]
+
+[_.projectMeta]
+title = "Projets — Thomas Germain"
+description = "Une sélection de projets, outils et expérimentations menés par Thomas Germain."
+longDescription = "Portfolio de projets web, automatisations, outils IA et travaux autour d'OpenClaw, WordPress, WooCommerce et d'architectures modernes."
+keywords = ["portfolio", "projets", "OpenClaw", "WordPress", "WooCommerce", "automatisation", "IA"]
+
+[_.notFoundMeta]
+title = "404 — Thomas Germain"
+description = "La page demandée n'existe pas."
+longDescription = "La page que vous cherchez n'existe pas, ou plus."
+
+[_.hero]
+title = "Bonjour, je suis Thomas Germain"
+subtitle = "Webmaster · Sysadmin · WordPress specialist"
+ctaText = "Voir mes projets"
+ctaUrl = "/projets"
+
+[_.personal]
+name = "Thomas Germain"
+githubProfile = "https://github.com/thomasgermain93"
+twitterProfile = "https://x.com/Capitemflam"
+linkedinProfile = "https://www.linkedin.com/in/thomas-germain-746093110/"
+
+[_.texts]
+articlesName = "Articles"
+projectsName = "Projets"
+viewAll = "Voir tout"
+noArticles = "Aucun article pour le moment."
+noProjects = "Aucun projet publié pour le moment."
+
+[_.menu]
+Accueil = "/"
+Projets = "/projets"
+Blog = "/blog"

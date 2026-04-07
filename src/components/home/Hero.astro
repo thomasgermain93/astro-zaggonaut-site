@@ -5,30 +5,39 @@ const { data: config } = await getConfigurationCollection();
 ---
 
 <div class="flex flex-col gap-8 sm:gap-10">
-  <div>
+  <div class="flex flex-col gap-4">
+    <p class="font-mono text-sm uppercase tracking-[0.2em] opacity-70">
+      Thomas Germain · Web systems · WordPress · automatisation
+    </p>
     <h1
-      class="text-3xl sm:text-5xl font-display font-semibold opsz leading-tight"
+      class="max-w-4xl text-3xl sm:text-5xl font-display font-semibold opsz leading-tight"
     >
       {config.hero.title}
     </h1>
-    <h2
-      class="mt-4 text-lg sm:text-2xl font-mono font-medium leading-relaxed opacity-90"
+    <div
+      class="max-w-3xl text-lg sm:text-2xl font-mono font-medium leading-relaxed opacity-90"
     >
       <p set:html={config.hero.subtitle} />
-    </h2>
+    </div>
   </div>
 
-  <p class="max-w-2xl text-base sm:text-lg leading-8 zag-text zag-transition">
+  <p class="max-w-3xl text-base sm:text-lg leading-8 zag-text zag-transition">
     {config.globalMeta.longDescription}
   </p>
 
-  <div>
+  <div class="flex flex-wrap items-center gap-4">
     <a
       href={config.hero.ctaUrl}
       class="inline-flex items-center gap-2 border px-5 py-3 text-sm sm:text-base font-medium zag-border zag-transition hover:translate-x-1"
     >
       {config.hero.ctaText}
       <span aria-hidden="true">→</span>
+    </a>
+    <a
+      href="/blog"
+      class="inline-flex items-center gap-2 px-1 py-3 text-sm sm:text-base font-medium underline underline-offset-4"
+    >
+      Lire les articles
     </a>
   </div>
 </div>

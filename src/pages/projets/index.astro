@@ -44,8 +44,13 @@ const { data: config } = await getConfigurationCollection();
     <link rel="canonical" href={`${config.site.baseUrl}/projets`} />
   </Fragment>
   <Section class="py-4 my-8">
-    <div class="flex items-center gap-4 pt-8 pb-16">
+    <div class="flex flex-col gap-4 pt-8 pb-16">
       <h1 class="font-display text-3xl sm:text-4xl leading-loose">{config.texts.projectsName}</h1>
+      {config.texts.projectsIntro && (
+        <p class="max-w-3xl zag-text zag-transition text-base sm:text-lg leading-8">
+          {config.texts.projectsIntro}
+        </p>
+      )}
     </div>
     <ul>
       {

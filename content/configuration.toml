@@ -6,9 +6,9 @@ baseUrl = "https://thomasgermain.be"
 
 [_.globalMeta]
 title = "Thomas Germain"
-description = "Webmaster & Systems Administrator — Wallonie, Belgique"
-longDescription = "Designer de formation reconverti dans le développement web, je gère l'infrastructure et les sites de l'agence Hungry Nuggets SRL : ~120 sites WordPress/WooCommerce pour une cinquantaine de clients. Passionné par l'automatisation, les outils IA et les architectures modernes."
-keywords = ["Thomas Germain", "Webmaster", "Systems Administrator", "WordPress", "WooCommerce", "automatisation", "IA", "Wallonie", "Belgique"]
+description = "Webmaster, sysadmin et builder web basé en Wallonie."
+longDescription = "Je conçois, déploie et maintiens des sites, des automatisations et des systèmes web utiles. Au quotidien, je gère l'infrastructure et un parc WordPress/WooCommerce conséquent, avec une obsession simple : faire des choses solides, lisibles et vraiment exploitables."
+keywords = ["Thomas Germain", "Webmaster", "Sysadmin", "WordPress", "WooCommerce", "automatisation", "IA", "Wallonie", "Belgique"]
 
 [_.blogMeta]
 title = "Blog — Thomas Germain"
@@ -18,8 +18,8 @@ keywords = ["blog", "web", "infra", "WordPress", "WooCommerce", "IA", "automatis
 
 [_.projectMeta]
 title = "Projets — Thomas Germain"
-description = "Une sélection de projets, outils et expérimentations menés par Thomas Germain."
-longDescription = "Portfolio de projets web, automatisations, outils IA et travaux autour d'OpenClaw, WordPress, WooCommerce et d'architectures modernes."
+description = "Une sélection de projets web, outils et expérimentations menés par Thomas Germain."
+longDescription = "Des projets concrets, des outils utiles et quelques expérimentations produits autour du web, de l'automatisation, de WordPress et de l'IA."
 keywords = ["portfolio", "projets", "OpenClaw", "WordPress", "WooCommerce", "automatisation", "IA"]
 
 [_.notFoundMeta]
@@ -45,6 +45,7 @@ projectsName = "Projets"
 viewAll = "Voir tout"
 noArticles = "Aucun article pour le moment."
 noProjects = "Aucun projet publié pour le moment."
+projectsIntro = "Une sélection de projets concrets, d'outils utiles et d'expérimentations menées sur le terrain."
 
 [_.menu]
 Accueil = "/"

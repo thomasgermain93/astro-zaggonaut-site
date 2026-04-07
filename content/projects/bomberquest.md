@@ -1,9 +1,9 @@
 ---
 title: "Bomberquest"
 slug: "bomberquest"
-description: "Jeu en cours de développement, pensé comme un terrain d'expérimentation produit, design et itération rapide."
-longDescription: "Bomberquest est un projet de jeu que j'utilise aussi comme laboratoire pour tester des idées de gameplay, de direction produit, de workflow créatif et d'automatisation autour du développement."
-tags: ["jeu", "prototype", "product", "expérimentation"]
+description: "Un projet de jeu utilisé comme labo pour tester du gameplay, du produit et des workflows de création plus rapides."
+longDescription: "Bomberquest me sert autant à construire un jeu qu'à explorer une manière de produire plus vite : prototypage, itération, direction produit, assets et automatisation du workflow."
+tags: ["jeu", "prototype", "produit", "expérimentation"]
 githubUrl: "https://github.com/thomasgermain93"
 timestamp: 2026-04-07
 featured: true

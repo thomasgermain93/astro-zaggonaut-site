@@ -48,6 +48,6 @@ noProjects = "Aucun projet publié pour le moment."
 projectsIntro = "Une sélection de projets concrets, d'outils utiles et d'expérimentations menées sur le terrain."
 
 [_.menu]
-Accueil = "/"
-Projets = "/projets"
-Blog = "/blog"
+home = "/"
+projects = "/projets"
+blog = "/blog"

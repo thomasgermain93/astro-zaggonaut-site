@@ -4,6 +4,11 @@ import Anchor from "./common/Anchor.astro";
 import Section from "./common/Section.astro";
 
 const { data: config } = await getConfigurationCollection();
+const menuLabels = {
+  home: "Accueil",
+  projects: "Projets",
+  blog: "Blog",
+};
 
 const date = new Date();
 const year = date.getFullYear();
@@ -16,9 +21,9 @@ const year = date.getFullYear();
     >
       <ul class="flex flex-col gap-2">
         {
-          Object.entries(config.menu).map((i) => (
+          Object.entries(config.menu).map(([key, url]) => (
             <li>
-              <Anchor url={i[1]}>{i[0]}</Anchor>
+              <Anchor url={url}>{menuLabels[key as keyof typeof menuLabels] ?? key}</Anchor>
             </li>
           ))
         }

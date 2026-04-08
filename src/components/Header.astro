@@ -4,6 +4,11 @@ import Anchor from "./common/Anchor.astro";
 import ThemeToggle from "./ThemeToggle.astro";
 
 const { data: config } = await getConfigurationCollection();
+const menuLabels = {
+  home: "Accueil",
+  projects: "Projets",
+  blog: "Blog",
+};
 ---
 
 <header class="zag-bg zag-border-b zag-transition sticky top-0 w-full z-10">
@@ -30,8 +35,8 @@ const { data: config } = await getConfigurationCollection();
       class="flex flex-col font-mono font-medium gap-4 sm:flex-row px-4 sm:px-0 mt-16 sm:mt-0"
     >
       {
-        Object.entries(config.menu).map((i) => (
-          <Anchor url={i[1]}>{i[0]}</Anchor>
+        Object.entries(config.menu).map(([key, url]) => (
+          <Anchor url={url}>{menuLabels[key as keyof typeof menuLabels] ?? key}</Anchor>
         ))
       }
     </div>

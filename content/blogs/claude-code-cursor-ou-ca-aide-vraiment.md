@@ -177,6 +177,8 @@ En gros :
 
 C’est là que le ratio gain / emmerdes devient intéressant.
 
+Si tu veux la version plus opérationnelle, j’ai aussi écrit un article sur [comment bien utiliser un LLM pour coder sans transformer ton repo en chantier](/blog/comment-bien-utiliser-un-llm-pour-coder/).
+
 ## Une bonne règle simple
 
 Si la tâche est :
@@ -207,7 +209,7 @@ Moins ton projet est inutilement compliqué, plus un assistant de code peut rée
 
 Par exemple, si tu pars sur un site simple avec contenu en Markdown, GitHub comme source of truth, et déploiement propre, tu réduis déjà beaucoup la surface de merde potentielle.
 
-Et si tu manipules souvent l’écosystème Node autour de ça, tu peux aussi jeter un œil à mes articles sur [npx](/blog/npx-cest-quoi/) et [pnpm](/blog/pnpm-cest-quoi/), parce que ce sont justement des outils qu’on croise vite dans ce genre de setup.
+Et si tu manipules souvent l’écosystème Node autour de ça, tu peux aussi jeter un œil à mes articles sur [npx](/blog/npx-cest-quoi/), [pnpm](/blog/pnpm-cest-quoi/) et [les lockfiles](/blog/cest-quoi-un-lockfile/), parce que ce sont justement des trucs qu’on croise vite dans ce genre de setup.
 
 ## La version courte
 

@@ -186,6 +186,8 @@ Si je résume brutalement, ma reco en 2026 pour un site simple et sérieux, c’
 - **GitHub** comme source of truth
 - **Cloudflare Pages** ou **GitHub Pages** pour l’hébergement
 
+Si tu veux creuser certains morceaux de cette stack, j’ai aussi écrit sur [pourquoi Markdown bat souvent un CMS](/blog/pourquoi-markdown-bat-un-cms/), [pourquoi un site statique reste une excellente idée](/blog/pourquoi-un-site-statique-est-une-bonne-idee/) et [comment bien utiliser un LLM pour coder](/blog/comment-bien-utiliser-un-llm-pour-coder/).
+
 Résultat :
 
 **un site statique performant, maintenable, scalable dans beaucoup de cas, et qui peut coûter 0€/mois à héberger.**

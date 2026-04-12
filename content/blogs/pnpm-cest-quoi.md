@@ -161,4 +161,4 @@ Si je résume brutalement :
 
 Bref : **pnpm, ce n’est pas juste un autre nom à apprendre. C’est une tentative assez saine de rendre l’écosystème Node un peu moins bordélique.**
 
-Et si `npx` te paraît encore flou à côté, j’ai aussi un article simple sur [ce que fait `npx` exactement](/blog/npx-cest-quoi/).
+Et si `npx` te paraît encore flou à côté, j’ai aussi un article simple sur [ce que fait `npx` exactement](/blog/npx-cest-quoi/) et un autre sur [ce qu’est un lockfile et pourquoi il compte vraiment](/blog/cest-quoi-un-lockfile/).

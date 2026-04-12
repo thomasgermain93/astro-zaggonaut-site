@@ -23,6 +23,8 @@ npx astro add tailwind
 
 Si tu débutes, ça peut être un peu flou. On pourrait se dire : **pourquoi `npx` ? Pourquoi pas juste `npm` ?**
 
+Et si tu vois aussi passer `pnpm` partout dans les projets récents, j’ai un article séparé sur [ce que `pnpm` change concrètement](/blog/pnpm-cest-quoi/).
+
 La réponse courte : **`npx` sert à exécuter un outil Node.js sans devoir l’installer globalement à la main.**
 
 ## La différence simple entre npm et npx
@@ -187,3 +189,5 @@ Si je résume brutalement :
 - mais il ne faut pas exécuter n’importe quel paquet au hasard comme un bourrin
 
 Bref : **`npx`, c’est le moyen propre de lancer un outil Node sans pourrir ton système avec des installations globales inutiles.**
+
+Et si tu veux voir comment ce genre d’outils s’intègre dans une stack web simple à lancer aujourd’hui, j’en parle dans [cet article sur la stack que je recommande en 2026](/blog/site-propre-rapide-gratuit-2026/).

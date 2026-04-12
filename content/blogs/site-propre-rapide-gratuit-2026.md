@@ -105,6 +105,8 @@ Pourquoi :
 
 Et surtout, l’expérience est assez fluide.
 
+Si tu utilises un assistant de code pour générer la base du projet, j’ai aussi détaillé [où Claude Code et Cursor aident vraiment, et où ils commencent à raconter de la merde](/blog/claude-code-cursor-ou-ca-aide-vraiment/).
+
 ### GitHub Pages
 
 C’est aussi une bonne option si tu veux aller au plus simple possible.
@@ -190,3 +192,5 @@ Résultat :
 
 Franchement, pour énormément de projets, ça suffit largement.
 Et ça évite de monter une cathédrale technique pour publier trois pages et deux articles de blog.
+
+Et si tu veux comprendre deux briques qu’on croise souvent dans ce genre de stack, tu peux aussi lire mes articles sur [npx](/blog/npx-cest-quoi/) et [pnpm](/blog/pnpm-cest-quoi/).

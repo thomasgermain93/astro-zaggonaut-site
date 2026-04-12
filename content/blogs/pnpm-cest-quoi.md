@@ -32,6 +32,8 @@ Un gestionnaire de paquets, c’est l’outil qui s’occupe de :
 
 Dans le monde Node, `npm` est l’outil historique. `pnpm` fait globalement le même boulot, mais avec une approche différente.
 
+Si tu veux voir où ce genre d’outils s’insère dans une stack web simple et peu coûteuse, j’en parle aussi dans [cet article sur la stack que je recommande en 2026](/blog/site-propre-rapide-gratuit-2026/).
+
 ## Pourquoi pnpm existe ?
 
 Parce que l’écosystème JavaScript adore empiler des dépendances.
@@ -158,3 +160,5 @@ Si je résume brutalement :
 - et s’il est imposé dans un repo, ce n’est généralement pas pour faire le malin
 
 Bref : **pnpm, ce n’est pas juste un autre nom à apprendre. C’est une tentative assez saine de rendre l’écosystème Node un peu moins bordélique.**
+
+Et si `npx` te paraît encore flou à côté, j’ai aussi un article simple sur [ce que fait `npx` exactement](/blog/npx-cest-quoi/).

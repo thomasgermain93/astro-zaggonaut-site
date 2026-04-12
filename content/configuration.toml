@@ -12,9 +12,9 @@ keywords = ["Thomas Germain", "Webmaster", "Sysadmin", "WordPress", "WooCommerce
 
 [_.blogMeta]
 title = "Blog — Thomas Germain"
-description = "Notes, expérimentations et retours terrain autour du web, de l'infra, de WordPress et de l'IA."
-longDescription = "Une sélection d'articles sur le développement web, l'administration système, l'automatisation, WordPress, WooCommerce et les outils IA."
-keywords = ["blog", "web", "infra", "WordPress", "WooCommerce", "IA", "automatisation"]
+description = "Articles simples et utiles sur le web, Node.js, l'IA, les sites statiques, l'automatisation et l'infrastructure."
+longDescription = "Un blog de vulgarisation technique avec des articles concrets sur le web moderne, Node.js, les outils IA, les sites statiques, l'automatisation et l'infrastructure."
+keywords = ["blog", "web", "node.js", "infra", "WordPress", "WooCommerce", "IA", "automatisation", "cloudflare", "next.js", "llm"]
 
 [_.projectMeta]
 title = "Projets — Thomas Germain"
@@ -41,6 +41,9 @@ linkedinProfile = "https://www.linkedin.com/in/thomas-germain-746093110/"
 
 [_.texts]
 articlesName = "Articles"
+articlesIntro = "Des articles simples, concrets et sans bullshit sur le web, Node.js, les outils IA, l'hébergement statique et le tooling moderne."
+featuredArticlesTitle = "À lire en priorité"
+articleSeriesTitle = "Séries et sujets"
 projectsName = "Projets"
 viewAll = "Voir tout"
 noArticles = "Aucun article pour le moment."

@@ -7,12 +7,44 @@ import { getConfigurationCollection, getOptionalCollection } from "../../lib/uti
 const articles = (await getOptionalCollection("blog")).sort(
 	(a, b) => b.data.timestamp.valueOf() - a.data.timestamp.valueOf(),
 );
+const featuredArticles = articles.filter((article) => article.data.featured).slice(0, 4);
+const latestArticles = articles.slice(0, 12);
+
+const topicGroups = [
+  {
+    title: "Stack web simple",
+    description: "Des bases propres pour lancer un site rapide, maintenable et pas inutilement cher.",
+    links: [
+      { label: "Créer un site propre, rapide et gratuit en 2026", url: "/blog/site-propre-rapide-gratuit-2026" },
+      { label: "Pourquoi un site statique reste une excellente idée en 2026", url: "/blog/pourquoi-un-site-statique-est-une-bonne-idee" },
+      { label: "Pourquoi Markdown bat souvent un CMS pour un site simple", url: "/blog/pourquoi-markdown-bat-un-cms" },
+    ],
+  },
+  {
+    title: "Tooling Node.js sans bullshit",
+    description: "Les briques qu’on croise partout, expliquées simplement sans folklore inutile.",
+    links: [
+      { label: "npx, ça sert à quoi exactement ?", url: "/blog/npx-cest-quoi" },
+      { label: "pnpm, c’est quoi exactement ?", url: "/blog/pnpm-cest-quoi" },
+      { label: "C’est quoi un lockfile, et pourquoi c’est important ?", url: "/blog/cest-quoi-un-lockfile" },
+      { label: "Pourquoi node_modules devient aussi énorme ?", url: "/blog/pourquoi-node-modules-est-gros" },
+    ],
+  },
+  {
+    title: "LLM et code",
+    description: "Ce que les assistants de code font vraiment bien, et les moments où il faut leur reprendre le volant.",
+    links: [
+      { label: "Claude Code / Cursor : là où ça aide vraiment, et là où ça raconte de la merde", url: "/blog/claude-code-cursor-ou-ca-aide-vraiment" },
+      { label: "Comment bien utiliser un LLM pour coder sans transformer ton repo en chantier", url: "/blog/comment-bien-utiliser-un-llm-pour-coder" },
+    ],
+  },
+];
 
 const { data: config } = await getConfigurationCollection();
 ---
 
 <Layout>
-    <Fragment slot="head">
+  <Fragment slot="head">
     <title>{config.blogMeta.title}</title>
     <meta
       name="description"
@@ -43,15 +75,69 @@ const { data: config } = await getConfigurationCollection();
     <meta name="language" content="French" />
     <link rel="canonical" href={`${config.site.baseUrl}/blog`} />
   </Fragment>
+
   <Section class="my-8">
-    <div class="flex items-center gap-4 pt-8 pb-16">
-      <h1 class="font-display text-3xl sm:text-4xl leading-loose">
+    <div class="pt-8 pb-12 flex flex-col gap-4 max-w-3xl">
+      <h1 class="font-display text-3xl sm:text-4xl leading-tight">
         {config.texts.articlesName}
       </h1>
+      <p class="zag-muted text-base sm:text-lg leading-relaxed">
+        {config.texts.articlesIntro}
+      </p>
     </div>
-    <ul>
-      {
-        articles.map((article) => (
+
+    {featuredArticles.length > 0 && (
+      <div class="mb-16">
+        <h2 class="font-display text-2xl sm:text-3xl mb-6">
+          {config.texts.featuredArticlesTitle}
+        </h2>
+        <div class="grid gap-6 md:grid-cols-2">
+          {featuredArticles.map((article) => (
+            <div class="border border-current/10 rounded-2xl p-5 bg-black/10">
+              <ArticleSnippet
+                title={article.data.title}
+                description={article.data.description}
+                duration={`${article.data.readTime} min`}
+                url={`/blog/${article.data.slug}`}
+                timestamp={article.data.timestamp}
+              />
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    <div class="mb-16">
+      <h2 class="font-display text-2xl sm:text-3xl mb-6">
+        {config.texts.articleSeriesTitle}
+      </h2>
+      <div class="grid gap-6 md:grid-cols-3">
+        {topicGroups.map((group) => (
+          <div class="border border-current/10 rounded-2xl p-5 flex flex-col gap-4 bg-black/5">
+            <div class="flex flex-col gap-2">
+              <h3 class="text-xl font-display">{group.title}</h3>
+              <p class="zag-muted text-sm leading-relaxed">{group.description}</p>
+            </div>
+            <ul class="flex flex-col gap-3 text-sm">
+              {group.links.map((link) => (
+                <li>
+                  <a class="underline underline-offset-4 decoration-current/30 hover:decoration-current" href={link.url}>
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div>
+      <h2 class="font-display text-2xl sm:text-3xl mb-6">
+        Tous les articles
+      </h2>
+      <ul>
+        {latestArticles.map((article) => (
           <li>
             <ArticleSnippet
               title={article.data.title}
@@ -61,8 +147,8 @@ const { data: config } = await getConfigurationCollection();
               timestamp={article.data.timestamp}
             />
           </li>
-        ))
-      }
-    </ul>
+        ))}
+      </ul>
+    </div>
   </Section>
 </Layout>

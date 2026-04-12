@@ -5,7 +5,7 @@ description: "Explication simple de npx : à quoi ça sert, quand l’utiliser, 
 longDescription: "Dans cet article, j’explique ce que fait npx, pourquoi il est pratique pour lancer un outil sans l’installer globalement, et dans quels cas il vaut mieux l’utiliser — ou l’éviter."
 tags: ["npx", "npm", "node.js", "cli", "javascript"]
 readTime: 5
-featured: true
+featured: false
 timestamp: 2026-04-09
 ---
 

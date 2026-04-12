@@ -16,10 +16,13 @@ const featuredProjects = (
 }));
 const featuredArticles = (
 	await getOptionalCollection("blog", (e) => e.data.featured)
-).map((e) => ({
-	...e.data,
-  url: `/blog/${e.data.slug}`,
-}));
+)
+	.sort((a, b) => b.data.timestamp.valueOf() - a.data.timestamp.valueOf())
+	.slice(0, 3)
+	.map((e) => ({
+		...e.data,
+    url: `/blog/${e.data.slug}`,
+	}));
 ---
 
 <Layout>
@@ -62,5 +65,20 @@ const featuredArticles = (
   </Section>
   <Section>
     <FeaturedArticles featuredArticles={featuredArticles} />
+  </Section>
+  <Section class="pb-8">
+    <div class="border border-current/10 rounded-2xl p-6 sm:p-8 flex flex-col gap-4 bg-black/5 max-w-4xl">
+      <div class="flex flex-col gap-2">
+        <h2 class="font-display text-2xl sm:text-3xl leading-tight">Lire les bons articles en premier</h2>
+        <p class="zag-muted leading-relaxed">
+          Si tu débarques sur le blog, commence par la stack web simple, puis les articles sur les assistants de code, puis le tooling Node. Ça donne une vue d’ensemble propre sans te perdre dans le folklore technique.
+        </p>
+      </div>
+      <ul class="grid gap-3 sm:grid-cols-3 text-sm sm:text-base">
+        <li><a class="underline underline-offset-4 decoration-current/30 hover:decoration-current" href="/blog/site-propre-rapide-gratuit-2026">La stack simple en 2026</a></li>
+        <li><a class="underline underline-offset-4 decoration-current/30 hover:decoration-current" href="/blog/claude-code-cursor-ou-ca-aide-vraiment">Claude Code / Cursor : le vrai gain</a></li>
+        <li><a class="underline underline-offset-4 decoration-current/30 hover:decoration-current" href="/blog/pnpm-cest-quoi">Comprendre pnpm rapidement</a></li>
+      </ul>
+    </div>
   </Section>
 </Layout>

@@ -5,7 +5,7 @@ description: "Pourquoi je préfère souvent des fichiers Markdown dans le repo p
 longDescription: "Dans cet article, j’explique pourquoi Markdown est souvent un meilleur choix qu’un CMS pour un blog, un site vitrine ou un portfolio simple : moins de complexité, moins de coûts, moins de maintenance."
 tags: ["markdown", "cms", "strapi", "contenu", "blog", "site statique"]
 readTime: 6
-featured: true
+featured: false
 timestamp: 2026-04-12
 ---
 

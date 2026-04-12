@@ -5,7 +5,7 @@ description: "Pourquoi les sites statiques restent un très bon choix en 2026 : 
 longDescription: "Dans cet article, j’explique pourquoi un site statique reste souvent la meilleure option pour un portfolio, un blog ou un site vitrine : moins de complexité, meilleures perfs, moins de maintenance et coûts quasi nuls."
 tags: ["site statique", "cloudflare pages", "github pages", "performance", "web", "astro"]
 readTime: 6
-featured: true
+featured: false
 timestamp: 2026-04-12
 ---
 

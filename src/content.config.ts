@@ -206,6 +206,31 @@ const configuration = defineCollection({
       articlesName: z.string().default("Articles"),
 
       /**
+       * Optional intro text for the blog page.
+       */
+      articlesIntro: z.string().optional(),
+
+      /**
+       * Optional heading for the featured articles block.
+       */
+      featuredArticlesTitle: z.string().optional(),
+
+      /**
+       * Optional heading for the article series block.
+       */
+      articleSeriesTitle: z.string().optional(),
+
+      /**
+       * Optional heading for the featured articles section on the homepage.
+       */
+      homeFeaturedArticlesTitle: z.string().optional(),
+
+      /**
+       * Optional intro text for the featured articles section on the homepage.
+       */
+      homeFeaturedArticlesIntro: z.string().optional(),
+
+      /**
        * The text used when displaying the projects section on the homepage.
        */
       projectsName: z.string().default("Projects"),

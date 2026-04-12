@@ -5,7 +5,7 @@ description: "Quelques règles simples pour utiliser Claude Code ou Cursor intel
 longDescription: "Dans cet article, je résume une manière saine d’utiliser un LLM pour coder : cadrer les demandes, garder la main sur l’architecture, vérifier les sorties et éviter la sur-complexité."
 tags: ["llm", "claude code", "cursor", "développement", "productivité", "architecture"]
 readTime: 6
-featured: true
+featured: false
 timestamp: 2026-04-12
 ---
 

@@ -5,7 +5,7 @@ description: "Explication simple de pnpm : pourquoi il existe, ce qui le disting
 longDescription: "Dans cet article, j’explique à quoi sert pnpm, pourquoi certains projets l’imposent, ce qu’il change par rapport à npm, et pourquoi ce n’est pas juste une mode de plus dans l’écosystème JavaScript."
 tags: ["pnpm", "npm", "node.js", "javascript", "package manager"]
 readTime: 5
-featured: true
+featured: false
 timestamp: 2026-04-12
 ---
 
